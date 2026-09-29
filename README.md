@@ -1,7 +1,7 @@
 <h1 align="center">TaskIR: Task-Driven Image Restoration via Degradation Adaptation and Task Feedback</h1>
 
 <p align="center">
-  <a href="https://github.com/leoyjTu">Yanjie Tu</a><sup>1</sup>,
+  <a href="https://scholar.google.com/citations?user=4vtRInUAAAAJ&hl=en">Yanjie Tu</a><sup>1</sup>,
   <a href="https://scholar.google.com/citations?user=BSGy3foAAAAJ&hl=en">Qingsen Yan</a><sup>1,2,*</sup>,
   <a href="https://scholar.google.com/citations?user=5apnc_UAAAAJ&hl=en&oi=ao">Axi Niu</a><sup>1</sup>,
   Wenxuan Cai</a><sup>1</sup>
@@ -68,8 +68,6 @@ The corresponding datasets are based on **ImageNet-1K**, **Cityscapes**, and **P
 
 The pre-generated degraded **LQ datasets will be released soon**.
 
-### 1. Generate Dataset Metadata
-
 After preparing the datasets, run the following scripts to generate the required JSON metadata files.
 
 #### Image Classification
@@ -90,10 +88,6 @@ python generate_data/Segmentation/process_cityscapes.py
 python generate_data/Detection/process_voc2012.py
 ```
 
-These scripts generate the dataset metadata used by TaskIR for training and evaluation.
-
-### 2. LQ Dataset
-
 TaskIR uses degraded low-quality (LQ) images corresponding to the three downstream datasets.
 
 The processed LQ datasets used in our experiments will be released soon.
@@ -103,7 +97,7 @@ The processed LQ datasets used in our experiments will be released soon.
 
 TaskIR is trained in two stages: **Stage I Restoration Training** and **Stage II Task Feedback**.
 
-### 1. Stage I: Restoration Training
+### Stage I: Restoration Training
 
 Train the degradation-adaptive restoration network using 4 GPUs:
 
@@ -120,9 +114,9 @@ The Stage I checkpoint will be saved under:
 checkpoints/restore/
 ```
 
-### 2. Stage II: Task Feedback
+### Stage II: Task Feedback
 
-After completing Stage I, fine-tune the task-feedback modules using the pretrained restoration checkpoint:
+After completing Stage I, train the task-feedback modules using the pretrained restoration checkpoint.
 
 ```bash
 CUDA_VISIBLE_DEVICES=0,1,2,3 torchrun --standalone --nproc_per_node=4 train.py \
