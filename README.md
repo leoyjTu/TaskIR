@@ -62,8 +62,6 @@ pip install -r requirements.txt
 
 ## 📂 Dataset Preparation
 
-TaskIR is evaluated on three downstream tasks: **image classification**, **semantic segmentation**, and **object detection**.
-
 The corresponding datasets are based on **ImageNet-1K**, **Cityscapes**, and **PASCAL VOC 2012**, respectively.
 After preparing the datasets, run the following scripts to generate the required JSON metadata files.
 
@@ -73,12 +71,11 @@ python generate_data/Segmentation/process_cityscapes.py
 python generate_data/Detection/process_voc2012.py
 ```
 
-TaskIR uses degraded low-quality (LQ) images corresponding to the three downstream datasets.
-
 The processed LQ datasets used in our experiments will be released soon.
 
 
 ## 💪 Pre-trained Weights
+
 For the downstream task pre-trained weights, please download them from [Baidu Netdisk](https://pan.baidu.com/s/1JU2Qj1QjU-utlFcAEOVB1w?pwd=5bi6) (extraction code: `5bi6`) and place them under `downstream/`.
 
 
