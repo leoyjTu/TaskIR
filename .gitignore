@@ -1,0 +1,54 @@
+# =========================
+# Python cache
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.ipynb_checkpoints/
+
+# =========================
+# IDE / OS
+# =========================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# =========================
+# Virtual environments
+# =========================
+venv/
+env/
+.venv/
+
+# =========================
+# Model checkpoints
+# =========================
+checkpoints/
+*.pth
+*.pt
+*.ckpt
+
+# =========================
+# Datasets
+# =========================
+datasets/
+
+# =========================
+# Training / evaluation outputs
+# =========================
+experiments/
+results/
+outputs/
+output/
+logs/
+runs/
+wandb/
+
+# =========================
+# Temporary files
+# =========================
+*.tmp
+*.log
