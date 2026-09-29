@@ -93,11 +93,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 torchrun --standalone --nproc_per_node=4 train.py \
   --max_iters 200000
 ```
 
-The Stage I checkpoint will be saved under:
-
-```text
-checkpoints/restore/
-```
+The Stage I checkpoint will be saved under: checkpoints/restore
 
 ### Stage II: Task Feedback
 
@@ -111,11 +107,8 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 torchrun --standalone --nproc_per_node=4 train.py \
   --max_iters 100000
 ```
 
-The Stage II checkpoint will be saved under:
+The Stage II checkpoint will be saved under: checkpoints/feedback/
 
-```text
-checkpoints/feedback/
-```
 
 ## 🌍 Inference
 
