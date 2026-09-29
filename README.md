@@ -78,6 +78,10 @@ TaskIR uses degraded low-quality (LQ) images corresponding to the three downstre
 The processed LQ datasets used in our experiments will be released soon.
 
 
+## 💪 Pre-trained Weights
+For the downstream task pre-trained weights, please download them from [Baidu Netdisk](https://pan.baidu.com/s/1JU2Qj1QjU-utlFcAEOVB1w?pwd=5bi6) (extraction code: `5bi6`) and place them under `downstream/`.
+
+
 ## 🚀 Training
 
 TaskIR is trained in two stages: **Stage I Restoration Training** and **Stage II Task Feedback**.
