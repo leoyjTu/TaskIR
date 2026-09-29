@@ -65,26 +65,11 @@ pip install -r requirements.txt
 TaskIR is evaluated on three downstream tasks: **image classification**, **semantic segmentation**, and **object detection**.
 
 The corresponding datasets are based on **ImageNet-1K**, **Cityscapes**, and **PASCAL VOC 2012**, respectively.
-
-The pre-generated degraded **LQ datasets will be released soon**.
-
 After preparing the datasets, run the following scripts to generate the required JSON metadata files.
-
-#### Image Classification
 
 ```bash
 python generate_data/Classification/process_imagenet1k.py
-```
-
-#### Semantic Segmentation
-
-```bash
 python generate_data/Segmentation/process_cityscapes.py
-```
-
-#### Object Detection
-
-```bash
 python generate_data/Detection/process_voc2012.py
 ```
 
