@@ -200,7 +200,7 @@ If this code contributes to your research, please cite our work:
 ```bibtex
 @article{tu2026taskir,
   title={TaskIR: Task-Driven Image Restoration via Degradation Adaptation and Task Feedback},
-  author={Tu, Yanjie and Yan, Qingsen and Niu, Axi and Wenxuan Cai and Hu, Tao and Wei Dong and Zhang, Haokui},
+  author={Tu, Yanjie and Yan, Qingsen and Niu, Axi and Cai, Wenxuan and Hu, Tao and Dong, Wei and Zhang, Haokui},
   journal={arXiv preprint arXiv:2609.31170},
   year={2026}
 }
